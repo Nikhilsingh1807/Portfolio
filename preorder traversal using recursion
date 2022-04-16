@@ -1,0 +1,12 @@
+// create a recursive function named 'preorder'.
+//node =  root of the tree.
+void preorder(node){
+  if (node == NULL)
+    return;
+  print(node->data);
+  preorder(node->left);
+  preorder(node->right);
+
+}
+
+//Prints the first element than moves to the left sub-tree prints the element if present and than repeats the step.
