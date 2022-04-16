@@ -1,0 +1,10 @@
+//Left Root Right
+
+
+void Inorder(node){
+ if(node == NULL)
+  return;
+Inorder(node->left);
+print(node->data);
+Inorder(node->right);
+}
